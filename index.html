@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Museum - Codo a Codo - Front End</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+   <link rel="shortcut icon" href="img/codoacodo.png" type="image/x-icon">
+   
+   <link rel="stylesheet" href="css/header.css">
+   <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/footer.css">
+
+   <!-- https://fontawesome.com/search?o=r&m=free -->
+   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+   <header class="header">
+      <div class="container">
+         <div class="row align-items-center justify-content-between">
+            <div class="logo">
+               <img id="logo-pagina" src="img/codoacodo.png" width="100" alt="Frontend-Museum">
+               <a href="#">Museum</a>
+            </div>
+            <button type="button" class="nav-toggler">
+               <span></span>
+            </button>
+            <nav class="nav">
+               <ul>
+                  <li><a href="#" class="active">Inicio</a></li>
+                  <li><a href="paginas/galeria.html">Galeria</a></li>
+                  <li><a href="astrologia.html">Mitologia</a></li>
+                  <li><a href="paginas/historia.html">Historia</a></li>
+                  <li><a href="paginas/formulario.html">Contacto</a></li>
+               </ul>
+            </nav>
+         </div>
+      </div>
+      <script src="js/script.js"></script>
+      <div id="progressBar"></div>
+   </header>
+   
+
+   <main>
+      <iframe name="paginas" src="paginas/inicio.html" frameborder="0"></iframe>
+   </main>
+
+   <footer class="footer">
+      <div class="container">
+         <div class="row">
+            <div class="footer-col">
+               <h4>El Grupo</h4>
+               <ul>
+                  <li><a href="paginas/nosotros.html">Sobre Nosotros</a></li>
+                  <li><a href="#">our services</a></li>
+                  <li><a href="#">privacy policy</a></li>
+                  <li><a href="#">affiliate program</a></li>
+               </ul>
+            </div>
+            <div class="footer-col">
+               <h4>Navegación</h4>
+               <ul>
+                  <li><a href="#">Inicio</a></li>
+                  <li><a href="paginas/galeria.html">Galeria</a></li>
+                  <li><a href="#">Astrología</a></li>
+                  <li><a href="paginas/historia.html">Historia</a></li>
+                  <li><a href="paginas/formulario.html">Contacto</a></li>
+               </ul>
+            </div>
+            <div class="footer-col">
+               <h4>Accesos al Código</h4>
+               <div class="social-links">
+                  <a href="https://github.com/LuchiReps/FRONTEND" target="_blank"><i class="fa-brands fa-github  fa-xl"></i></a>
+                  <a href="https://front-end-museum.netlify.app/" target="_blank"><i class="fa-solid fa-cubes fa-xl"></i></a>
+                  <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Ffront-end-museum.netlify.app" target="_blank"><i class="fa-regular fa-file-code fa-xl"></i></a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+
+</body>
+</html>
