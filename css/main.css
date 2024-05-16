@@ -1,0 +1,23 @@
+main{
+    background-color:rgb(229, 229, 229);
+    width: 100%;
+    min-height: 700px;
+}
+
+iframe{
+    background-color: grey;
+    width: 100%;
+    height: 700px;
+}
+
+@media(max-width:1110px){
+    iframe{
+        height: 1300px;
+    }
+}
+
+@media(max-width:745px){
+    iframe{
+        height: 1850px;
+    }
+}

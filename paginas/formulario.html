@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Museum - Codo a Codo - Front End</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="../img/codoacodo.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/form.css">
+    <script src="../js/form.js"></script>
+
+    <!--- Librería Sweet Alert (Personaliza las alertas => https://sweetalert2.github.io/ --->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- https://fontawesome.com/search?o=r&m=free -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="logo">
+                    <img id="logo-pagina" src="../img/codoacodo.png" width="100" alt="Frontend-Museum">
+                    <a href="../index.html">Museum</a>
+                </div>
+                <button type="button" class="nav-toggler">
+                    <span></span>
+                </button>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="galeria.html">Galeria</a></li>
+                        <li><a href="astrologia.html">Astrología</a></li>
+                        <li><a href="historia.html">Historia</a></li>
+                        <li><a href="#" class="active">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <script src="../js/script.js"></script>
+        <div id="progressBar"></div>
+    </header>
+
+    <div id="contenedor-formulario">
+        <div class="contactForm">
+            <form action="formulario.html" class="form" id="formulario" onsubmit="return validarFormulario()">
+                <h1 class="title">Contacto</h1>
+
+                <div class="inputContainer">
+                    <input type="email" class="input" id="email" placeholder="Ingrese su Correo usuario@dominio.com">
+                    <label for="email" class="label">Email</label>
+                </div>
+
+                <div class="inputContainer">
+                    <input type="text" class="input" id="nombre" placeholder="Ingrese su nombre">
+                    <label for="nombre" class="label">Nombre</label>
+                </div>
+
+                <div class="inputContainer">
+                    <input type="text" class="input" id="apellido" placeholder="Ingrese su apellido">
+                    <label for="apellido" class="label">Apellido</label>
+                </div>
+
+                <div class="inputContainer">
+                    <input type="tel" class="input" id="telefono" placeholder="Ingrese su teléfono, SÓLO NÚMEROS">
+                    <label for="telefono" class="label">Teléfono</label>
+                </div>
+
+                <div class="inputContainer">
+                    <textarea class="mensaje" id="mensaje" minlength="10" maxlength="136" placeholder="Ingrese su mensaje"></textarea>
+                    <label for="mensaje" class="label">Mensaje</label>
+                </div><br><br>
+
+                <label for="motivo">Motivo del contacto:</label>
+                <select id="motivo" name="motivo">
+                    <option value="">Seleccione una opción</option>
+                    <option value="Sugerencia">Sugerencia</option>
+                    <option value="Queja">Queja</option>
+                    <option value="Otro">Otro</option>
+                </select><br><br>
+
+                <input type="checkbox" id="terminos" name="terminos">
+                <label for="terminos" class="labelCheck">Acepto los términos y condiciones</label>
+
+                <div style="display:flex;">
+                    <input type="submit" class="submitBtn" value="Enviar">
+
+                    <button type="reset" class="submitBtn-reset">Reiniciar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>El Grupo</h4>
+                    <ul>
+                    <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="#">our services</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                    <li><a href="#">affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Navegación</h4>
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="galeria.html">Galeria</a></li>
+                        <li><a href="astrologia.html">Astrología</a></li>
+                        <li><a href="historia.html">Historia</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Accesos al Código</h4>
+                    <div class="social-links">
+                    <a href="https://github.com/LuchiReps/FRONTEND" target="_blank"><i class="fa-brands fa-github  fa-xl"></i></a>
+                    <a href="https://front-end-museum.netlify.app/" target="_blank"><i class="fa-solid fa-cubes fa-xl"></i></a>
+                    <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Ffront-end-museum.netlify.app" target="_blank"><i class="fa-regular fa-file-code fa-xl"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
