@@ -2,12 +2,13 @@ body {
 	font-family: Arial, sans-serif;
 	margin: 0;
 	padding: 0;
+	background-image: url(../img/Fondo.jpg);
 }
 
 #contenedor-historia {
 	padding-top: 100px;
 	/* Ajusta el padding superior para evitar que el contenido se superponga con la barra de navegación */
-
+	
 }
 
 #parrafo {
@@ -15,7 +16,7 @@ body {
 	border: solid 1px;
 	border-color: black;
 	border-radius: 4ch;
-	background-color: rgb(79, 79, 80);
+background-color: rgb(79, 79, 80);
 	color: #fff;
 	right: 1%;
 	position: fixed;
@@ -40,14 +41,48 @@ body {
 	margin: 12px;
 }
 .subtitulo{
-	color: rgb(17, 16, 16);
+	color: rgb(237, 237, 237);
 	background-color: rgb(233, 230, 230);
-	padding: 12px;
+	padding: 5px;
 	margin: 13px;
 	text-align: center;
 	
 }
 .history{
 	font-family: 'Courier New', Courier, monospace;
-	
+	background-color: rgb(179, 179, 179);
+	padding: 4%;
+	border-radius: 2ch;
+	color: rgb(54, 54, 54);
 }
+*::-webkit-scrollbar {
+	height: 12px;
+	width: 12px;
+  }
+  *::-webkit-scrollbar-track {
+	border-radius: 2px;
+	background-color: #75AADB;
+	border: 2px solid #FFFFFF;
+  }
+  
+  *::-webkit-scrollbar-track:hover {
+	background-color: #75AADB;
+  }
+  
+  *::-webkit-scrollbar-track:active {
+	background-color: #FFFFFF;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+	border-radius: 5px;
+	background-color: #FCBF45;
+	border: 1px solid #FFFFFF;
+  }
+  
+  *::-webkit-scrollbar-thumb:hover {
+	background-color: #FCBF45;
+  }
+  
+  *::-webkit-scrollbar-thumb:active {
+	background-color: #CE2B37;
+  }

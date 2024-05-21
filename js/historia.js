@@ -9,14 +9,14 @@ window.onscroll = function() {
       var parrafo = document.getElementById('parrafo');
 
       if(tema2.top < 65 && tema2.top < tema3.top){
-            parrafo.innerHTML = " Baja Edad Media ";   
+            parrafo.innerHTML = " Siglos XI-XV ";   
       }
       
       if(tema3.top < 65){
-            parrafo.innerHTML = " Renacimiento ";   
+            parrafo.innerHTML = " Siglos XV-XVI ";   
       }
       
       if(tema2.top > 399){
-            parrafo.innerHTML = " Alta Edad Media ";   
+            parrafo.innerHTML = " Siglos V-X ";   
       }
 };
