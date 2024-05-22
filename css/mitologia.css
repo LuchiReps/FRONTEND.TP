@@ -1,0 +1,9 @@
+
+.contenedor_img_mit{
+    margin-top: 78px;
+}
+.contenedor_img_mit p{
+    display: inline-block;
+    vertical-align: top;
+    position: absolute;
+}
