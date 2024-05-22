@@ -1,40 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-    <title>Museum - Codo a Codo - Front End</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Museum - Codo a Codo - Front End</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="shortcut icon" href="../img/codoacodo.png" type="image/x-icon">
+        <link rel="shortcut icon" href="../img/codoacodo.png" type="image/x-icon">
 
-    <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="../css/inicio.css">
-    <link rel="stylesheet" href="../css/mitologia.css">
+        <link rel="stylesheet" href="../css/header.css">
+        <link rel="stylesheet" href="../css/footer.css">
+        <link rel="stylesheet" href="../css/mitologia.css">
 
-    <!-- https://fontawesome.com/search?o=r&m=free -->
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <!-- https://fontawesome.com/search?o=r&m=free -->
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     </head>
     <body>
         <header class="header">
             <div class="container">
                 <div class="row align-items-center justify-content-between">
                     <div class="logo">
-                    <img id="logo-pagina" src="../img/codoacodo.png" width="100" alt="Frontend-Museum">
-                    <a href="#">Museum</a>
+                        <img id="logo-pagina" src="../img/codoacodo.png" width="100" alt="Frontend-Museum">
+                        <a href="#">Museum</a>
                     </div>
                     <button type="button" class="nav-toggler">
-                    <span></span>
+                        <span></span>
                     </button>
+                    
                     <nav class="nav">
-                    <ul>
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="galeria.html">Galeria</a></li>
-                        <li><a href="#" class="active">Mitologia</a></li>
-                        <li><a href="historia.html">Historia</a></li>
-                        <li><a href="formulario.html">Contacto</a></li>
-                    </ul>
+                        <ul>
+                            <li><a href="../index.html">Inicio</a></li>
+                            <li><a href="galeria.html">Galeria</a></li>
+                            <li><a href="#" class="active">Mitologia</a></li>
+                            <li><a href="historia.html">Historia</a></li>
+                            <li><a href="formulario.html">Contacto</a></li>
+                        </ul>
                     </nav>
                 </div>
             </div>
@@ -42,26 +41,22 @@
             <div id="progressBar"></div>
         </header>
 
-        <div>
-            <div class="contenedor_img_mit">
-                <h1>Inicio y primeros templos</h1>
-                <img src="../img/Mitologia/maqueta_templo.jpg" alt="">
-                <div class="fondo_P">
-                    <p class="parrafo_Mit">Mitología romana introduccion <br>
-                        La gran roma, en sus comienzos, fue un conjunto de pequeñas tribus, fulana, mengana, sultana.<br>
-                        Ellos creian en el dios *** y la derivacion de su nombre fue ***. La tribu sultana ha tenido la infuencia de los dioses griegos, en el cual, la derivacion del nombre de su dios *** fue **** <br>
-                        Al tener sus mismas raices, hay muchas similares entre ambas religiones, por lo cual, mismos dioses han tenido nombres distintos.
-
-                    </p>
-                </div>
-                <h1>Los principales dioses</h1>
-                <img src="../img/Mitologia/principales_dioses.webp" alt="">
-                <div class="fondo_P">
-                    <p class="parrafo_Mit">Como se puede apreciar en la imagen Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est, quos. Minima obcaecati facilis reiciendis corporis temporibus natus explicabo rem soluta nostrum quisquam! Dolor magni dolorem et quo itaque voluptatibus exercitationem?</p>
-                </div>
+        <div class="mitologia">
+            <h1 class="templo_titulo">Inicio y primeros templos</h1>
+            <img class="templo_img" src="../img/Mitologia/maqueta_templo.jpg" alt="">
+            <div class="fondo_P templo_texto">
+                <p class="parrafo_Mit">Mitología romana introduccion <br>
+                    La gran roma, en sus comienzos, fue un conjunto de pequeñas tribus, fulana, mengana, sultana.<br>
+                    Ellos creian en el dios *** y la derivacion de su nombre fue ***. La tribu sultana ha tenido la infuencia de los dioses griegos, en el cual, la derivacion del nombre de su dios *** fue **** <br>
+                    Al tener sus mismas raices, hay muchas similares entre ambas religiones, por lo cual, mismos dioses han tenido nombres distintos.
+                </p>
             </div>
             
-            
+            <h1 class="dioses_titulo">Los principales dioses</h1>
+            <img class="dioses_img" src="../img/Mitologia/principales_dioses.webp" alt="">
+            <div class="fondo_P dioses_texto">
+                <p class="parrafo_Mit">Como se puede apreciar en la imagen Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est, quos. Minima obcaecati facilis reiciendis corporis temporibus natus explicabo rem soluta nostrum quisquam! Dolor magni dolorem et quo itaque voluptatibus exercitationem?</p>
+            </div>
         </div>
 
         <footer class="footer">

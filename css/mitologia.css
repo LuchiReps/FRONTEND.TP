@@ -3,13 +3,52 @@ body{
     background-size: cover;
     background-attachment: fixed;
 }
-.contenedor_img_mit{
+
+.mitologia{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(6,1fr);
+    grid-template-areas: 
+        'templo_titulo templo_titulo'
+        'templo_img templo_texto'
+        'templo_img templo_texto'
+        'dioses_titulo dioses_titulo'
+        'dioses_img dioses_texto'
+        'dioses_img dioses_texto';
     margin-top: 78px;
+    align-items: center;
+    background-color: rgb(99, 100, 100);
 }
+
+    .templo_titulo{
+        grid-area: templo_titulo;
+    }
+    .templo_img{
+        grid-area: templo_img;
+        max-width: 100%;
+        height: auto;
+        justify-self: center;
+    }
+    .templo_texto{
+        grid-area: templo_texto;
+        text-align: justify;
+    }
+
+    .dioses_titulo{
+        grid-area: dioses_titulo;
+    }
+    .dioses_img{
+        grid-area: dioses_img;
+        width: 100%;
+        height: auto;
+        justify-self: center;
+    }
+    .dioses_texto{
+        grid-area: dioses_texto;
+        text-align: justify;
+    }
+
 .fondo_P{
-    display: inline-block;
-    vertical-align: top;
-    position: absolute;
     background-color: rgb(69, 69, 70);
     border: solid black 1px;
     border-radius: 2ch;
@@ -18,5 +57,30 @@ body{
     padding: 20px 20px;
 }
 h1{
-    text-align: right;
+    text-align: center;
+}
+
+/*responsive*/
+
+@media screen and (max-width: 600px){
+    /* Mobile */
+    .mitologia{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(6,1fr);
+        grid-template-areas: 
+            'templo_titulo'
+            'templo_img'
+            'templo_texto'
+            'dioses_titulo'
+            'dioses_img'
+            'dioses_texto';
+        margin-top: 78px;
+        align-items: center;
+        background-color: rgb(99, 100, 100);
+    }
+}
+
+@media screen and (min-width:600px and max-width: 768px){
+    
 }

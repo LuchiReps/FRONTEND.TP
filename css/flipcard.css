@@ -51,7 +51,7 @@ img{
 	backface-visibility: hidden;
 }
 .flip-main .flip-card-back{
-	background-color: #6e0ec5;
+	background-color: #757179;
 	position: absolute;
 	left:0;
 	top:0;
@@ -74,40 +74,12 @@ img{
 	color: #e9e9e9;
 	margin:0;
 }
+.flip-card-back a{
+	color: white;
+}
 .flip-main .flip-card:hover .flip-card-inner{
 	transform: rotateY(180deg);
 }
-*::-webkit-scrollbar {
-	height: 12px;
-	width: 12px;
-  }
-  *::-webkit-scrollbar-track {
-	border-radius: 2px;
-	background-color: #75AADB;
-	border: 2px solid #FFFFFF;
-  }
-  
-  *::-webkit-scrollbar-track:hover {
-	background-color: #75AADB;
-  }
-  
-  *::-webkit-scrollbar-track:active {
-	background-color: #FFFFFF;
-  }
-  
-  *::-webkit-scrollbar-thumb {
-	border-radius: 5px;
-	background-color: #FCBF45;
-	border: 1px solid #FFFFFF;
-  }
-  
-  *::-webkit-scrollbar-thumb:hover {
-	background-color: #FCBF45;
-  }
-  
-  *::-webkit-scrollbar-thumb:active {
-	background-color: #CE2B37;
-  }
 
 /*responsive*/
 @media(max-width: 991px){
