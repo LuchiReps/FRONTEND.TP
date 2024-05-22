@@ -34,7 +34,6 @@ body {
 	display: block;
 	padding: 4%;
 	margin: 0;
-	
 	margin-bottom: 80px;
 }
 
@@ -48,7 +47,8 @@ body {
 
 .subtitulo {
 	color: black;
-	background-color: rgb(233, 230, 230);
+background-color: #FCBF45;
+border-radius: 1ch;
 	padding: 5px;
 	margin: 13px;
 	text-align: center;
@@ -57,16 +57,13 @@ body {
 
 .history {
 	font-family: 'Courier New', Courier, monospace;
-	background-color: rgb(179, 179, 179);
+	background-color: rgb(143, 143, 143);
 	padding: 4%;
 	border-radius: 2ch;
-	color: rgb(54, 54, 54);
+	color: rgb(255, 255, 255);
 }
 
-.fa-solid fa-angles-right {
 
-	size: 3px;
-}
 
 *::-webkit-scrollbar {
 	height: 12px;

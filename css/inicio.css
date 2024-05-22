@@ -2,6 +2,7 @@ body {
     background-image: url(../img/Fondo.jpg);
     background-size: cover;
     image-rendering: crisp-edges;
+    background-attachment: fixed;
 }
 
 #contenedor-inicio {
