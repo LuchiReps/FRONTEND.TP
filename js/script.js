@@ -29,3 +29,22 @@ function updateProgressBar() {
 window.onscroll = function() {
    updateProgressBar();
 };
+
+
+const dioses = document.querySelector(".dioses");
+dioses.addEventListener("click", mostrar);
+
+function mostrar() {
+   dioses.style;
+   const nav = document.querySelector(".nav");
+   nav.classList.toggle("open");
+
+   if(nav.classList.contains("open")){
+      nav.style.maxHeight = nav.scrollHeight + "px";
+   }
+   else{
+      nav.removeAttribute("style");
+   }
+}
+
+

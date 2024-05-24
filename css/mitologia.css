@@ -6,15 +6,18 @@ body{
 
 .mitologia{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(6,1fr);
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(3, 80px 1fr 1fr);
     grid-template-areas: 
-        'templo_titulo templo_titulo'
-        'templo_img templo_texto'
-        'templo_img templo_texto'
-        'dioses_titulo dioses_titulo'
-        'dioses_img dioses_texto'
-        'dioses_img dioses_texto';
+        'templo_titulo templo_titulo templo_titulo templo_titulo templo_titulo templo_titulo'
+        'templo_img templo_img templo_img templo_texto templo_texto templo_texto'
+        'templo_img templo_img templo_img templo_texto templo_texto templo_texto'
+        'dioses_titulo dioses_titulo dioses_titulo dioses_titulo dioses_titulo dioses_titulo'
+        'dioses_img dioses_img dioses_img dioses_texto dioses_texto dioses_texto'
+        'dioses_img dioses_img dioses_img dioses_texto dioses_texto dioses_texto'
+        'dioses dioses dioses dioses dioses dioses'
+        'dios1 dios2 dios3 dios4 dios5 dios6'
+        'dios7 dios8 dios9 dios10 dios11 dios12';
     margin-top: 78px;
     align-items: center;
     background-color: rgb(99, 100, 100);
@@ -26,12 +29,18 @@ body{
     .templo_img{
         grid-area: templo_img;
         max-width: 100%;
-        height: auto;
+        min-height: 270px;
+        padding: 20px;
         justify-self: center;
     }
     .templo_texto{
         grid-area: templo_texto;
         text-align: justify;
+        max-height: 350px;
+        min-height: 264px;
+        overflow-y: scroll;
+        padding-left: 10px;
+        margin-right: 10px;
     }
 
     .dioses_titulo{
@@ -42,10 +51,13 @@ body{
         width: 100%;
         height: auto;
         justify-self: center;
+        padding: 20px;
     }
     .dioses_texto{
         grid-area: dioses_texto;
         text-align: justify;
+        padding-left: 10px;
+        margin-right: 10px;
     }
 
 .fondo_P{
@@ -67,7 +79,7 @@ h1{
     .mitologia{
         display: grid;
         grid-template-columns: repeat(1,1fr);
-        grid-template-rows: repeat(6,1fr);
+        grid-template-rows: repeat(3, 80px auto auto);
         grid-template-areas: 
             'templo_titulo'
             'templo_img'
