@@ -35,7 +35,11 @@
         // Selecciona el h1 por su id y agrega un event listener
         var h1 = document.getElementById("titulo");
             h1.addEventListener("click", function() {
-                h1.textContent = "chau";
+                if(h1.textContent == "chau"){
+                    h1.textContent = "hola";
+                }else{
+                    h1.textContent = "chau";
+                }
             });
 
         // Agrega event listeners a cada imagen
