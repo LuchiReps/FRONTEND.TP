@@ -20,7 +20,7 @@ body{
         'dios7 dios8 dios9 dios10 dios11 dios12';
     margin-top: 78px;
     align-items: center;
-    background-color: rgb(99, 100, 100);
+    /* background-color: rgb(99, 100, 100); */
 }
 
     .templo_titulo{
@@ -59,53 +59,101 @@ body{
         padding-left: 10px;
         margin-right: 10px;
     }
-    .zeus{
-        grid-area:dios1;
+    .jupiter{
+        grid-area: dios1;
         justify-self: center;
+        width: 100%;
+        max-height: 265px;
+        height: 100%;
+        padding: 20px;
     }
     .pluton{
-        grid-area:dios2;
+        grid-area: dios2;
         justify-self: center;
+        width:100%;
+        max-height: 265px;
+        height: 100%;
+        padding: 20px;
     }
     .marte{
-        grid-area:dios3;
+        grid-area: dios3;
         justify-self: center;
+        width:100%;
+        max-height: 265px;
+        height: 100%;
+        padding: 20px;
     }
     .neptuno{
         grid-area:dios4;
         justify-self: center;
+        width:100%;
+        max-height: 265px;
+        height: 100%;
+        padding: 20px;
     }
     .apolo{
         grid-area:dios5;
         justify-self: center;
+        width:100%;
+        max-height: 265px;
+        height: 100%;
+        padding: 20px;
     }
     .mercurio{
         grid-area:dios6;
         justify-self: center;
+        width:100%;
+        max-height: 265px;
+        height: 100%;
+        padding: 20px;
     }
     .juno{
         grid-area:dios7;
         justify-self: center;
+        width:100%;
+        max-height: 265px;
+        height: 100%;
+        padding: 20px;
     }
     .minerva{
         grid-area:dios8;
         justify-self: center;
+        width:100%;
+        max-height: 265px;
+        height: 100%;
+        padding: 20px;
     }
     .venus{
         grid-area:dios9;
         justify-self: center;
+        width:100%;
+        max-height: 265px;
+        height: 100%;
+        padding: 20px;
     }
     .diana{
         grid-area:dios10;
         justify-self: center;
+        width:100%;
+        max-height: 265px;
+        height: 100%;
+        padding: 20px;
     }
     .ceres{
         grid-area:dios11;
         justify-self: center;
+        width:100%;
+        max-height: 265px;
+        height: 100%;
+        padding: 20px;
     }
     .vesta{
         grid-area:dios12;
         justify-self: center;
+        width:100%;
+        max-height: 265px;
+        height: 100%;
+        padding: 20px;
     }
     
 
