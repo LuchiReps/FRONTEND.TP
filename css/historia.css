@@ -3,14 +3,15 @@ body {
 	margin: 0;
 	padding: 0;
 	
+
+	background-image: url(../img/Fondo.jpg);
+	background-size: cover;
+	background-attachment:fixed;
 }
 
 #contenedor-historia {
 	padding-top: 100px;
 	/* Ajusta el padding superior para evitar que el contenido se superponga con la barra de navegación */
-	background-image: url(../img/Fondo.jpg);
-	background-size: cover;
-	background-attachment:fixed;
 }
 
 #parrafo {
