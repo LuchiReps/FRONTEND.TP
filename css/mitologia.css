@@ -4,27 +4,9 @@ body{
     background-attachment: fixed;
 }
 
-.mitologia{
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    grid-template-rows: repeat(3, 80px 1fr 1fr);
-    grid-template-areas: 
-        'templo_titulo templo_titulo templo_titulo templo_titulo templo_titulo templo_titulo'
-        'templo_img templo_img templo_img templo_texto templo_texto templo_texto'
-        'templo_img templo_img templo_img templo_texto templo_texto templo_texto'
-        'dioses_titulo dioses_titulo dioses_titulo dioses_titulo dioses_titulo dioses_titulo'
-        'dioses_img dioses_img dioses_img dioses_texto dioses_texto dioses_texto'
-        'dioses_img dioses_img dioses_img dioses_texto dioses_texto dioses_texto'
-        'dioses dioses dioses dioses dioses dioses'
-        'dios1 dios2 dios3 dios4 dios5 dios6'
-        'dios7 dios8 dios9 dios10 dios11 dios12';
-    margin-top: 78px;
-    align-items: center;
-    /* background-color: rgb(99, 100, 100); */
-}
-
     .templo_titulo{
         grid-area: templo_titulo;
+        background-color: rgb(69, 69, 70,0.5);
     }
     .templo_img{
         grid-area: templo_img;
@@ -45,6 +27,8 @@ body{
 
     .dioses_titulo{
         grid-area: dioses_titulo;
+        background-color: rgb(69, 69, 70,0.5);
+        border-radius: 10px;
     }
     .dioses_img{
         grid-area: dioses_img;
@@ -175,21 +159,68 @@ h1{
     /* Mobile */
     .mitologia{
         display: grid;
-        grid-template-columns: repeat(1,1fr);
-        grid-template-rows: repeat(3, 80px auto auto);
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,80px 1fr) repeat(6, 265px);
         grid-template-areas: 
-            'templo_titulo'
-            'templo_img'
-            'templo_texto'
-            'dioses_titulo'
-            'dioses_img'
-            'dioses_texto';
+            'templo_titulo templo_titulo'
+            'templo_img templo_texto'
+            'dioses_titulo dioses_titulo'
+            'dioses_img dioses_texto'
+            'dios1 dios2'
+            'dios3 dios4'
+            'dios5 dios6'
+            'dios7 dios8'
+            'dios9 dios10'
+            'dios11 dios12';
+        margin-top: 78px;
+        align-items: center;
+        background-color: rgb(99, 100, 100);
+    }
+    .templo_titulo{
+        justify-self: center;
+    }
+    .dioses_titulo{
+        justify-self: center;
+    }
+    .dioses{
+        justify-self: center;
+    }   
+}
+
+@media screen and (min-width:601px) and (max-width: 768px){
+    .mitologia{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(2,80px 1fr) repeat(3, 265px);
+        grid-template-areas:    
+            'templo_titulo templo_titulo templo_titulo templo_titulo'
+            'templo_img templo_img templo_texto templo_texto'
+            'dioses_titulo dioses_titulo dioses_titulo dioses_titulo'
+            'dioses_img dioses_img dioses_texto dioses_texto'
+            'dios1 dios2 dios3 dios4'
+            'dios5 dios6 dios7 dios8'
+            'dios9 dios10 dios11 dios12';
         margin-top: 78px;
         align-items: center;
         background-color: rgb(99, 100, 100);
     }
 }
 
-@media screen and (min-width:600px and max-width: 768px){
-    
+@media screen and (min-width: 769px){
+    .mitologia{
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        grid-template-rows: repeat(2,80px 230px 230px) repeat(2, 1fr);
+        grid-template-areas: 
+            'templo_titulo templo_titulo templo_titulo templo_titulo templo_titulo templo_titulo'
+            'templo_img templo_img templo_img templo_texto templo_texto templo_texto'
+            'templo_img templo_img templo_img templo_texto templo_texto templo_texto'
+            'dioses_titulo dioses_titulo dioses_titulo dioses_titulo dioses_titulo dioses_titulo'
+            'dioses_img dioses_img dioses_img dioses_texto dioses_texto dioses_texto'
+            'dioses_img dioses_img dioses_img dioses_texto dioses_texto dioses_texto'
+            'dios1 dios2 dios3 dios4 dios5 dios6'
+            'dios7 dios8 dios9 dios10 dios11 dios12';
+        margin-top: 78px;
+        align-items: center;
+    }
 }
