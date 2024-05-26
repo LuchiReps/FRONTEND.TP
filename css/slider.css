@@ -2,10 +2,14 @@ main{
     min-height: 400px;
 }
 
+body{
+    background-image: url(../img/Fondo.jpg);
+	background-size: cover;
+	background-attachment:fixed;
+}
+
 #contenedor-galeria {
     padding-top: 90px; /* Ajusta el padding superior para evitar que el contenido se superponga con la barra de navegación */
-    background-image: url(../img/Fondo.jpg);
-    background-size: cover;
 }
 
 #kiko-slider {
