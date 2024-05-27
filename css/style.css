@@ -143,3 +143,10 @@
     background: #ababab;
     color: #fff;
 }
+
+@media screen and (max-width: 600px){
+    .slider{
+        width: 500px;
+        height: 300px;
+    }
+}
