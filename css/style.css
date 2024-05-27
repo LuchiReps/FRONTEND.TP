@@ -149,4 +149,7 @@
         width: 500px;
         height: 300px;
     }
+    .item .content{
+        left: 50px;
+    }
 }
