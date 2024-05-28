@@ -23,6 +23,7 @@ img{
 .row{
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 }
 .container{
 	max-width: 1170px;
@@ -42,6 +43,7 @@ img{
 	position: relative;
 	transform-style: preserve-3d;
 	transition: all 0.5s ease;
+	width: 360px;
 }
 .flip-main .flip-card-front img{
 	width: 100%;
@@ -80,17 +82,3 @@ img{
 .flip-main .flip-card:hover .flip-card-inner{
 	transform: rotateY(180deg);
 }
-
-/*responsive*/
-@media(max-width: 991px){
-	.flip-main .flip-card {
-    flex: 0 0 calc(50% - 30px);
-	}
-}
-@media(max-width: 767px){
-	.flip-main .flip-card {
-    flex: 0 0 calc(100% - 30px);
-	}	
-}
-
-
