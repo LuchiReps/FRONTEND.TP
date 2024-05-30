@@ -176,12 +176,14 @@ h1{
     .mitologia{
         display: grid;
         grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(2,80px 1fr) repeat(6, 265px);
+        grid-template-rows: repeat(2,80px 1fr 1fr) repeat(6, 265px);
         grid-template-areas: 
             'templo_titulo templo_titulo'
-            'templo_img templo_texto'
+            'templo_img templo_img'
+            'templo_texto templo_texto'
             'dioses_titulo dioses_titulo'
-            'dioses_img dioses_texto'
+            'dioses_img dioses_img'
+            'dioses_texto dioses_texto'
             'dios1 dios2'
             'dios3 dios4'
             'dios5 dios6'
