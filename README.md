@@ -83,6 +83,7 @@
     - "min-width: 769px": 6 columnas y 8 filas
     - "(min-width:601px) and (max-width: 768px)": 4 columnas y 7 filas
     - "max-width: 600px": 2 columnas y 10 filas
+  - Cada uno de los 12 dioses tienen acción click, la cual abre un popup modal con la imágen e información del dios elegido. (Realizado con CSS y JS)
 
 - 4- Historia:
   - Maquetación de simples etiquetas div, p y h3
