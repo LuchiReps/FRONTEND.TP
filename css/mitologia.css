@@ -10,8 +10,8 @@ body{
     }
     .templo_img{
         grid-area: templo_img;
-        max-width: 100%;
-        min-height: 270px;
+        max-width: 80%;
+        /* min-height: 270px; */
         padding: 20px;
         justify-self: center;
     }
@@ -32,7 +32,7 @@ body{
     }
     .dioses_img{
         grid-area: dioses_img;
-        width: 100%;
+        max-width: 100%;
         height: auto;
         justify-self: center;
         padding: 20px;
@@ -40,6 +40,9 @@ body{
     .dioses_texto{
         grid-area: dioses_texto;
         text-align: justify;
+        overflow-y: scroll;
+        max-height: 350px;
+        min-height: 264px;
         padding-left: 10px;
         margin-right: 10px;
     }
