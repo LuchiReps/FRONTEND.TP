@@ -152,6 +152,9 @@ body{
     .item .content{
         left: 10px;
     }
+    .modal{
+        width: 500px;
+    }
 }
 
 .seleccionado{
