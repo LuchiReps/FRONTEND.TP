@@ -76,6 +76,8 @@
   - Es un slider de imágenes, con display: inline-block
   - Funciona con JS (carrusel.js)
   - Para el efecto de slider, posee conbinación de "transform: translate", transition y "animation: animate"
+  - Los botones "Ver Más", tienen un popup modal que muestra más información del autor actual (con html,css,js)
+  - Responsive a los 600px
 
 - 3- Mitología
   - Posee "display: grid"
