@@ -67,7 +67,7 @@ body{
     font-size: 14px;
     font-weight: 600;
     color: purple;
-    background-color: white;
+    background-color: rgb(235, 232, 232);
   }
 
   .input:focus {
@@ -161,7 +161,7 @@ body{
     font-size: 14px;
     font-weight: 600;
     color: purple;
-    background-color: white;
+    background-color: rgb(235, 232, 232);
   }
 
   .mensaje:focus {
