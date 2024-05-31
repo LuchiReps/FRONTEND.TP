@@ -160,6 +160,13 @@ body{
     border: solid black 1px;
     border-radius: 2ch;
 }
+.fondo_P h4{
+    color: #fff;
+    font-style: italic;
+    text-align: center;
+    margin-top: 25px;
+}
+
 .parrafo_Mit{
     padding: 20px 20px;
     color: rgb(255, 255, 255);
