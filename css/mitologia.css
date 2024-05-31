@@ -10,7 +10,7 @@ body{
     }
     .templo_img{
         grid-area: templo_img;
-        max-width: 100%;
+        width: 100%;
         /* min-height: 270px; */
         padding: 20px;
         justify-self: center;
