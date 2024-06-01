@@ -221,6 +221,9 @@ h1{
     gap: 20px;
     padding: 20px;
     border-radius: 10px;
+    opacity: 0;
+    transform: scale(0.5);
+    transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
 .modal-content img {
@@ -239,4 +242,12 @@ h1{
     font-size: 30px;
     cursor: pointer;
     color: white;
+}
+.image-item img {
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Transición para el efecto de crecimiento */
+}
+.modal.show .modal-content {
+    display: grid;
+    opacity: 1;
+    transform: scale(1);
 }

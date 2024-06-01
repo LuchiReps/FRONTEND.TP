@@ -11,17 +11,27 @@ mitologia.forEach(image => {
         modal.style.display = 'flex';
         modalImage.src = image.src;
         modalDescription.textContent = image.getAttribute('data-text');
+
+        setTimeout(() => {
+            modal.classList.add('show');
+        }, 10);
     });
 });
 
 // Agregar evento de clic para cerrar el modal
 closeModalBtn.addEventListener('click', () => {
-    modal.style.display = 'none';
+    modal.classList.remove('show');
+    setTimeout(() => {
+        modal.style.display = 'none';
+    }, 500);
 });
 
 // Cerrar el modal al hacer clic fuera del contenido del modal
 window.addEventListener('click', (event) => {
     if (event.target === modal) {
-        modal.style.display = 'none';
+        modal.classList.remove('show');
+        setTimeout(() => {
+            modal.style.display = 'none';
+        }, 500)
     }
 }); 
