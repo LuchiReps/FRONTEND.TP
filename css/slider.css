@@ -49,9 +49,11 @@ body{
 }
 .slide .item:nth-child(4){
     left: calc(60% + 220px);
+    filter: blur(2px);
 }
 .slide .item:nth-child(5){
     left: calc(60% + 440px);
+    filter: blur(4px);
 }
 
 /* here n = 0, 1, 2, 3,... */
